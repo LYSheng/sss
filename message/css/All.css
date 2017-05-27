@@ -1,0 +1,440 @@
+body,html{
+   position: relative;
+    height: 100%;
+    overflow: auto !important;
+}
+.Contact_box{
+    font-size: 14px;
+    position: relative;
+}
+.Contact_padding{
+    padding: 0.5rem 0.4rem;
+    padding-top: 0px;
+}
+.Contact_Tui{
+    position: absolute;
+    right: 0.4rem;
+    top: 0px;
+    font-size: 30px !important;
+}
+/*标题开始*/
+.Title{
+    width: 100%;
+    text-align: center;
+    height: 2rem;
+    border-bottom: 1px solid #d6d6d6;
+}
+.Title h1{
+    line-height: 2rem;
+    font-weight: normal;
+}
+/*标题结束*/
+/*留言列表开始*/
+.menu{
+    width: 100%;
+    height: auto;
+    border: 1px solid #c8c8c8;
+    margin-top: 0.3rem;
+}
+.menu_title_box{
+    display: flex;
+    width: 100%;
+    /*height: 0.8rem;*/
+    font-size: 14px;
+    /*border-bottom: 1px solid #c8c8c8;*/
+}
+.menu_icon{
+    flex-grow: 0;
+    width: 0.75rem;
+    text-align: center;
+    line-height: 0.8rem;
+    border-right: 1px solid #c8c8c8;
+
+}
+.menu_title{
+    line-height: 0.8rem;
+    flex-grow: 1;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.menu_ssNow{
+    text-align: center;
+    line-height: 0.5rem;
+}
+.menu_la{
+    font-size: 12px !important;
+    line-height: 0.3rem;
+    color: #00A7FD;
+}
+.menu_la>i{
+    font-style: normal;
+    font-size: 10px !important;
+}
+.menu_list_box{
+    width: 100%;
+    display: none;
+    background-color: #f9f9f9;
+    border-top: 1px solid #c8c8c8;
+}
+.menu_list{
+    width: 100%;
+    padding: 0.3rem 0.75rem 0.2rem 0.75rem;
+    border-bottom: 1px solid #dedede;
+}
+.menu_list:last-child{
+    border-bottom: none;
+}
+.menu_cha{
+    width: 100%;
+    height: 1.4rem;
+    background-color: #f5f5f5;
+    line-height: 1.4rem;
+    text-align: center;
+    border-bottom: none;
+}
+.mune_button{
+    /*display: block;*/
+    width: 1.2rem;
+    list-style: none;
+    height: 0.6rem;
+    text-align: center;
+    line-height: 0.6rem;
+    background-color: #51A351;
+    color: #fff;
+    border: none;
+    margin: 0 auto;
+}
+.menu_p{
+    display: inline;
+    font-size: 14px;
+}
+.mandatory_p{
+    display: inline;
+    font-size: 14px;
+}
+.menu_input{
+    width: 100%;
+    height: 0.7rem;
+    margin-top: 0.3rem;
+    border: 1px solid #dfdfdf;
+    padding-left: 5px;
+}
+.menu_sou{
+    flex-grow: 0;
+    width: 0.75rem;
+    text-align: center;
+    line-height: 0.8rem;
+    border-left: 1px solid #c8c8c8;
+    position: relative;
+}
+
+/*留言列表结束*/
+/*静态列表开始*/
+.Static_Box{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #c8c8c8;
+    /*margin-top: 0.35rem;*/
+    border-top: none;
+}
+.Static_nav{
+    display: flex;
+    height: 0.8rem;
+    background-color: #fff;
+    padding: 0.1rem;
+}
+.Static_Bg{
+    background-color: #eee !important;
+}
+.Static_select{
+    line-height:0.6rem;
+    padding-right: 10px;
+}
+.Static_select>select,option{
+    border: 1px solid #aaaaaa;
+    height: 70%;
+}
+.Static_sousuo{
+    flex-grow: 1;
+    border: 1px solid #cccccc;
+    padding-left: 5px;
+}
+.Static_BgBox{
+    width: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+
+.th_span_box{
+    display: block;
+    width: 0.7rem;
+    margin: 0 auto;
+}
+.th_span_box>span{
+    font-size: 12px!important;
+    text-align: left;
+}
+.th_span_box>span:nth-child(2){
+    text-align: right;
+}
+.Static_buttom_max{
+    width: 100%;
+    height: 0.8rem;
+    position: relative;
+    /*background-color: red;*/
+}
+.Static_paging{
+    display: flex;
+    width:95%;
+    height: 0.68rem;
+    justify-content: space-between;
+    border: 1px solid #b8b8b8;
+    position: absolute;
+    left: 0px;
+    top: 0.35rem;
+    bottom:0px;
+    right: 0px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.Static_paging>a{
+    display:block;
+    text-align: center !important;
+    line-height: 0.58rem;
+    flex-grow:1;
+    color: #000;
+    font-size: 14px;
+    padding: 0.1rem;
+    border-right: 1px solid #b8b8b8;
+}
+.td_tell_cha{
+    display: none;
+    color: #00a8e0 !important;
+}
+.Static_active{
+    background-color: #41BEDD;
+    color: #fff !important;
+}
+#jumpPage{
+    border-left: 1px solid #b8b8b8;
+}
+.table-1{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    width:400%;
+    height: 100%;
+    border-right: none;
+    border-left: none;
+}
+.table-1 tr,.table-1 td{
+    border: 1px solid #ccc;
+    padding:0.18rem 0;
+    text-align: center;
+    /*background-color: #f6f6f6;*/
+}
+.table-1 th{
+    background-color:#CCC;
+    border: 1px solid #eee;
+    font-size: 14px;
+    padding:0.1rem 0.1rem;
+
+}
+td>a{
+    color: #343434;
+}
+td{
+    color: #343434;
+}
+/*th,td{padding:6px 0;text-align:center;border:1px solid #999;}*/
+/*th{background-color:#CCC;color:#ffffff;}*/
+/*.sort_able{cursor:pointer;background:url(../image/small.gif) no-repeat right center;}*/
+/*.sort_asc{background:url(../image/asc.png) no-repeat right center;cursor:pointer;padding:0.07rem 0;}*/
+/*.sort_desc{background:url(../image/desc.png) no-repeat right center;cursor:pointer;padding:0.07rem 0;}*/
+/*静态列表结束*/
+
+/*多条件选择*/
+tr.hide,tr.hide td{display:none;}
+
+/*跟进按钮*/
+.follow_up{
+    padding: 0.05rem 0.1rem;
+    background-color: #00a8e0;
+    color: #fff;
+}
+.mandatory_box{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    overflow: auto;
+    padding-top: 0.8rem;
+    background-color: rgba(129, 129, 129, 0.76);
+    z-index: 99999999999999999999;
+}
+.menu_title_box,.Title{
+    background-color: #eeeeee;
+}
+.menu_TzShow{
+    margin-top: 0px;
+    border-top: none;
+}
+.mandatory {
+    opacity: 0;
+    color: red;
+}
+.mandatory_input_box{
+    display:flex;
+}
+.mandatory_input{
+    width:85%;
+}
+.mandatory_iphone{
+    width:15%;
+    height: 0.7rem;
+    margin-top: 0.3rem;
+    text-align: center;
+    line-height: 0.7rem;
+    color: #03A9F4;
+    /*background-color:#dfdfdf;*/
+}
+/*全部留言详情*/
+.All_show_box{
+    margin-bottom: 0.6rem;
+    background-color: #e5f9f7;
+    padding-top: 0.2rem;
+}
+.All_h{
+    padding-left: 0.75rem;
+}
+.All_textarea{
+    height: 1.4rem;
+}
+.All_lists{
+    padding: 0.08rem 0.7rem 0.1rem 0.75rem;
+}
+.All_top{
+    margin-top: 0.1rem;
+}
+.All_td{
+    display: flex;
+    width: 100%;
+    height: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+.All_fen_one{
+    flex-grow: 0;
+    width: 1.5rem;
+    text-align: center;
+    line-height: 0.7rem;
+}
+.All_fen_two{
+    flex-grow: 1;
+    background-color: #c5eaea;
+}
+.mandBox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    z-index: -111;
+}
+.chu_ssNow{
+    line-height: 0.8rem;
+}
+.chu_beiwang{
+    padding: 0.2rem;
+    min-height: 1.5rem;
+    max-height: 1.5rem;
+}
+.chu_box{
+    display: block;
+}
+/*查看按钮开始*/
+.examine{
+    padding: 0.05rem 0.1rem;
+    background-color: #82e0b0;
+    color: #fff;
+}
+.examine_box{
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-top: 0.8rem;
+    background-color: rgba(129, 129, 129, 0.76);
+    z-index: 99999999999999999999;
+}
+.Te{
+    min-height: 2rem;
+    max-height: 2rem;
+    margin: 0 auto;
+}
+.examine_buttun{
+    width: 30%;
+    height: 0.7rem;
+    background-color: #fd877b;
+    color: #fff;
+    text-align: center;
+    line-height: 0.7rem;
+    margin: 0 auto;
+    margin-bottom: 0.3rem;
+}
+.Contact_exmout{
+    font-size: 30px !important;
+    position: absolute;right: 0.5rem;
+    top: 0.05rem;
+
+}
+/*跟进必选*/
+#ai_xuan,#bi_xuan,#ci_xuan,#di_xuan,#ei_xuan{
+    opacity: 0;
+}
+.ai_xuan{
+    opacity: 0;
+}
+.bg{
+    color: red;
+    font-size: 10px;
+    padding: 0.05rem 0.1rem;
+    border-radius: 15px;
+    animation: myfirst 3s cubic-bezier(0.07, 1.23, 0.94, 0.04) .5s infinite alternate;
+}
+@keyframes myfirst
+{
+    0%{
+        margin-left: 0px;
+    }50%{
+             margin-left: 20px;
+         }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+/**/
+#tbody-1{
+
+}
+.Tr_bian{
+    background-color: #cee0ce !important;
+}
+
+select,option{
+    background-color: #fff;
+}
+input[type="date"]{
+    background-color: #fff;
+}
+/*select,option{*/
+    /*background-color: transparent;*/
+/*}*/
+#adminTbody{
+    overflow: auto;
+    height: 100%;
+}
+

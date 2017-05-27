@@ -1,0 +1,1131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <link rel="stylesheet" href="../css/All.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/dropload.css">
+    <script src="../js/rem.js"></script>
+    <title>项目全部留言</title>
+</head>
+<body>
+<header class="index_header container">
+    <div class="index_nav iconfont">&#xe666;</div>
+    <div class="index_title_box">
+        <div class="index_title">项目全部 <span class="index_one">留</span><span class="index_two">言</span></div>
+    </div>
+    <div class="index_nav"></div>
+</header>
+<!--<div class="index_baitai"></div>-->
+<div class="index_MaxBox">
+    <!--面包屑开始-->
+    <div class="index_miaoBao">
+        <span>项目全部留言</span>
+    </div>
+    <!--面包屑结束-->
+    <!--正文开始-->
+    <div class="Contact_box">
+        <!--留言列表开始-->
+        <div class="menu">
+            <div class="menu_title_box menu_height">
+                <span class="menu_icon iconfont">&#xe604;</span>
+                <input name="key" type="text" id="key" oninput="onSearch(this)" value="" class="Static_sousuo" placeholder="请输入客户姓名搜索">
+                <div class="menu_sou iconfont">&#xe605;</div>
+            </div>
+            <div class="menu_list_box">
+                <div class="menu_list">
+                    <p class="menu_p">留言编码</p>
+                    <input id="LyBm" class="menu_input" type="text" placeholder="留言编码">
+                </div>
+                <div class="menu_list">
+                    <p class="menu_p">项目ID</p>
+                    <input id="Bm" class="menu_input" type="text" placeholder="项目ID">
+                </div>
+                <div class="menu_list">
+                    <p class="menu_p">项目经理</p>
+                    <input id="Jl" class="menu_input" type="text" placeholder="项目经理">
+                </div>
+                <div class="menu_list">
+                    <p class="menu_p">客户姓名</p>
+                    <input id="Kh" class="menu_input" type="text" placeholder="客户姓名">
+                </div>
+                <div class="menu_list">
+                    <p class="menu_p">开始时间</p>
+                    <input id="Ks" class="menu_input" type="date" placeholder="开始时间">
+                </div>
+                <div class="menu_list">
+                    <p class="menu_p">结束时间</p>
+                    <input id="Js" class="menu_input" type="date" placeholder="结束时间">
+                </div>
+                <div class="menu_cha menu_list">
+                    <button class="mune_button" id="search" value="搜索" onclick="search()">查询</button>
+                </div>
+            </div>
+        </div>
+        <!--留言列表结束-->
+        <!--静态列表开始-->
+        <div class="Static_Box">
+
+            <div class="Static_BgBox">
+                <table class="table-1" id="tableSort">
+                    <thead>
+                        <tr>
+                        <th id="All">全选
+                            <input type="checkbox" class="All_input">
+                        </th>
+                        <th id="Num">
+                            <span class="sort_able">序号</span>
+                        </th>
+                        <th id="LyMa">
+                            <span class="sort_able">留言编码</span>
+                        </th>
+                        <th id="form">
+                            <span class="sort_able">来源</span>
+                        </th>
+
+                        <th id="KhSj">
+                            <span class="sort_able">客户姓名</span>
+                        </th>
+                        <th id="KhNum">
+                            <span class="sort_able">客户手机号</span>
+                        </th>
+                        <th id="XmId">
+                            <span class="sort_able">项目ID</span>
+                        </th>
+                        <th id="XmName">
+                            <span class="sort_able">项目名称</span>
+                        </th>
+                        <th id="LyText">
+                            <span class="sort_able">留言内容</span>
+                        </th>
+                        <th id="state">
+                            <span class="sort_able">状态</span>
+                        </th>
+                        <th id="distribution">
+                            <span class="sort_able">分配给</span>
+                        </th>
+                        <th id="investors">
+                            <span class="sort_able">投资者等级</span>
+                        </th>
+                        <th id="clinch">
+                            <span class="sort_able">成交录入情况</span>
+                        </th>
+                        <th id="LyTime">
+                            <span class="sort_able">留言时间</span>
+                        </th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="adminTbody">
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td></td>
+                            <td>李雨晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td></td>
+                            <td>张晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td></td>
+                            <td>李雨晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td></td>
+                            <td>张晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td></td>
+                            <td>李雨晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td></td>
+                            <td>张晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td></td>
+                            <td>李雨晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td></td>
+                            <td>张晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td></td>
+                            <td>李雨晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td></td>
+                            <td>张晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td></td>
+                            <td>李雨晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td></td>
+                            <td>张晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td></td>
+                            <td>李雨晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td></td>
+                            <td>张晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td></td>
+                            <td>李雨晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td></td>
+                            <td>张晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td></td>
+                            <td>李雨晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="td_checkbox">
+                            </td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td></td>
+                            <td>张晴</td>
+                            <td><a href="" class="td_tell">17789899999</a>  <span class="td_tell_cha">查看</span></td>
+                            <td>1</td>
+                            <td>136</td>
+                            <td>哦I软件</td>
+                            <td>三天未回访</td>
+                            <td>吴海</td>
+                            <td>F累</td>
+                            <td>未成交</td>
+                            <td>2016-16-89</td>
+                            <td>
+                                <a href="javascript:;" class="follow_up">跟进</a>
+                                <a href="javascript:;" class="examine">查看</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--<div id="barcon2"class="barcon2 Static_buttom_max">-->
+                <!--<div class="Static_paging">-->
+                    <!--<a class="page_list Static_active" href="javascript:;"  id="firstPage">首页</a>-->
+                    <!--<a class="page_list" href="javascript:;"  id="prePage">上一页</a>-->
+                    <!--<a class="page_list" href="javascript:;"  id="nextPage">下一页</a>-->
+                    <!--<a class="page_list" href="javascript:;"  id="lastPage">尾页</a>-->
+                    <!--<select name="" id="jumpWhere">-->
+                    <!--</select>-->
+                    <!--<a href="###" class="page_list" id="jumpPage" onclick="jumpPage()">跳转</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <!--静态列表结束-->
+    </div>
+    <!--征文结束-->
+</div>
+<div class="index_mask">
+    <div class="index_mask_box">
+        <div class="index_mask_image">
+            <div class="index_mask_tuBox"></div>
+            <span class="mask_name">我是间谍</span>
+            <br>
+            <a href="" class="mask_tuichu">一键退出</a>
+        </div>
+        <ul class="index_mask_ul">
+            <li class="index_mask_list">
+                <span class="index_mask_shi">项目全部留言</span>
+                <sapn class="Mask_Button">+</sapn>
+            </li>
+            <ul id="Mask_uls">
+                <li class="Mask_list">
+                    <a href="" class="Mask_A">
+                        项目全部留言
+                    </a>
+                </li>
+                <li class="Mask_list">
+                    <a href="" class="Mask_A">
+                        今日待沟通的新客户
+                    </a>
+                </li>
+                <li class="Mask_list">
+                    <a href="" class="Mask_A">
+                        预约回访的老客户
+                    </a>
+                </li>
+                <li class="Mask_list">
+                    <a href="" class="Mask_A">
+                        超过三天未联系的老客户
+                    </a>
+                </li>
+            </ul>
+            <li class="index_mask_list">
+                <span class="index_mask_shi">投资者信息</span>
+                <sapn class="Mask_Button">+</sapn>
+            </li>
+            <ul id="Mask_uls">
+                <li class="Mask_list">
+                    <a href="" class="Mask_A">
+                        投资者信息
+                    </a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div class="index_mask_right"></div>
+</div>
+<!--跟进详情开始-->
+    <div class="mandatory_box">
+        <!--<div class="index_MaxBox">-->
+        <div class="Contact_box Contact_padding">
+            <div class="Contact_Tui iconfont">&#xe607;</div>
+            <!--标题开始-->
+            <div class="Title">
+                <h1>全部项目留言</h1>
+            </div>
+            <!--标题结束-->
+            <!--留言列表开始-->
+            <div class="menu menu_TzShow">
+                <div class="menu_title_box menu_height">
+                    <span class="menu_icon iconfont">&#xe604;</span>
+                    <div class="menu_title chu_ssNow menu_ssNow">全部项目留言信息
+                        <!--<p class="iconfont menu_la"> <i>点击</i> &#xe667; <i>下拉</i> </p>-->
+                    </div>
+                    <div class="menu_sou chu_sou iconfont">&#xe605;</div>
+                </div>
+                <div class=" chu_box" >
+                    <div class="All_show_box">
+                        <h4 class="All_h">留言信息</h4>
+                        <div class="menu_list All_lists">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">项目ID</p>
+                            <input class="menu_input All_top" type="text" placeholder="项目id" value=" ">
+                        </div>
+                        <div class="menu_list All_lists">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">项目名称</p>
+                            <input class="menu_input All_top" type="text" placeholder="项目名称" value=" ">
+                        </div>
+                        <div class="menu_list All_lists">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">客户姓名</p>
+                            <input class="menu_input All_top" type="text" placeholder="客户姓名" value=" ">
+                        </div>
+                        <div class="menu_list All_lists">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p" >联系方式</p>
+                            <div class="mandatory_input_box">
+                                <input id="Tziphone" class="menu_input mandatory_input All_top" type="text" placeholder="联系方式">
+                                <a href="" class="mandatory_iphone All_top iconfont">&#xe651;</a>
+                            </div>
+                        </div>
+                        <div class="menu_list All_lists">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">联系方式归属地</p>
+                            <input class="menu_input All_top" type="text" placeholder="联系方式归属地" value=" ">
+                        </div>
+                        <div class="menu_list All_lists">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">留言内容</p>
+                            <textarea class="menu_input All_top All_textarea" type="text" value=" "></textarea>
+                        </div>
+                        <div class="menu_list All_lists">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">留言时间</p>
+                            <input class="menu_input All_top" type="text" placeholder="留言时间" value=" ">
+                        </div>
+                    </div>
+                    <div class="All_show_box">
+                        <h4 class="All_h">分配记录</h4>
+                        <div class="All_tr menu_list">
+                            <div class="All_td">
+                                <span class="All_fen_one">账号:</span>
+                                <span class="All_fen_two"></span>
+                            </div>
+                            <div class="All_td">
+                                <span class="All_fen_one">姓名:</span>
+                                <span class="All_fen_two"></span>
+                            </div>
+                            <div class="All_td">
+                                <span class="All_fen_one">角色:</span>
+                                <span class="All_fen_two"></span>
+                            </div>
+                            <div class="All_td">
+                                <span class="All_fen_one">操作人:</span>
+                                <span class="All_fen_two"></span>
+                            </div>
+                            <div class="All_td">
+                                <span class="All_fen_one">分配时间:</span>
+                                <span class="All_fen_two"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="All_show_box" id="All_show">
+                        <h4 class="All_h">跟进记录</h4>
+                        <div class="menu_list">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">联系方式2</p>
+                            <div class="mandatory_input_box">
+                                <input class="menu_input " type="text" placeholder="联系方式2">
+                            </div>
+                        </div>
+                        <div class="menu_list">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">联系方式2归属地</p>
+                            <input class="menu_input" type="text" placeholder="联系方式2归属地">
+                        </div>
+                        <div class="menu_list">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">性别</p>
+                            <select class="menu_list_select menu_input" name="" id="">
+                                <option value="">男</option>
+                                <option value="">女</option>
+                            </select>
+                        </div>
+                        <div class="menu_list">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">电子邮件</p>
+                            <input class="menu_input" type="email" placeholder="电子邮件">
+                        </div>
+                        <div class="menu_list">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p" hidden="true">感兴趣的行业</p>
+                            <!--<span id="ai_xuan">&nbsp(&nbsp必答哦)</span>-->
+                            <span class="ai_xuan">&nbsp(&nbsp必答哦)</span>
+                            <select class="menu_list_select menu_input dnf" name="" id="interest">
+                                <option >--未选择--</option>
+                                <option >服饰箱包</option>
+                                <option >美容养生</option>
+                                <option >知名酒水</option>
+                                <option >居家建材</option>
+                                <option>中西餐饮</option>
+                                <option>教育培训</option>
+                                <option >新奇特色</option>
+                                <option >工程代理</option>
+                                <option >食品饮料</option>
+                            </select>
+                        </div>
+                        <div class="menu_list">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">QQ</p>
+                            <input class="menu_input" type="text" placeholder="QQ账号">
+                        </div>
+                        <div class="menu_list">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">微信</p>
+                            <input class="menu_input" type="text" placeholder="微信">
+                        </div>
+                        <div class="menu_list">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p" hidden="true">投资者等级</p>
+                            <!--<span id="bi_xuan">&nbsp(&nbsp必答哦)</span>-->
+                            <span class="ai_xuan">&nbsp(&nbsp必答哦)</span>
+                            <select class="menu_list_select menu_input dnf" name="" id="tzDeng">
+                                <option >--未选择--</option>
+                                <option >A类（有实力强烈意向）</option>
+                                <option >B类（有实力较有意向）</option>
+                                <option >C类（愿意了解）</option>
+                                <option >D类（暂无意向）</option>
+                                <option >E类（新进-未跟进）</option>
+                                <option >F类（去电未接通）</option>
+                                <option >G类（有意向-转投资顾问）</option>
+                                <option>H类（招商会）</option>
+                                <option >I类（成交）</option>
+                            </select>
+                        </div>
+                        <div class="menu_list">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p" hidden="true">投资者金额</p>
+                            <!--<span id="ci_xuan">&nbsp(&nbsp必答哦)</span>-->
+                            <span class="ai_xuan">&nbsp(&nbsp必答哦)</span>
+                            <select class="menu_list_select menu_input dnf" name="" id="Allmoney">
+                                <option>--请选择--</option>
+                                <option >5万以下</option>
+                                <option >5万-10万</option>
+                                <option >10万-20万</option>
+                                <option >20万-50万</option>
+                                <option >50万-100万</option>
+                                <option >100万以上</option>
+                                <option >不确定</option>
+                            </select>
+                        </div>
+                        <div class="menu_list">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">门店情况</p>
+                            <input class="menu_input" type="text" placeholder="门店情况">
+                        </div>
+                        <div class="menu_list">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">门店面积（㎡）</p>
+                            <input class="menu_input" type="text" placeholder="门店面积">
+                        </div>
+                        <div class="menu_list">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">上次跟进时间</p>
+                            <input class="menu_input" type="text" placeholder="">
+                        </div>
+                        <div class="menu_list">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p" hidden="true">回访时间</p>
+                            <!--<span id="di_xuan">&nbsp(&nbsp必答哦)</span>-->
+                            <span class="ai_xuan">&nbsp(&nbsp必答哦)</span>
+                            <input class="menu_input dnf" type="date" id="Tztime">
+                        </div>
+                        <div class="menu_list">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p" hidden="true">跟进状态</p>
+                            <!--<span id="ei_xuan">&nbsp(&nbsp必答哦)</span>-->
+                            <span class="ai_xuan">&nbsp(&nbsp必答哦)</span>
+                            <select class="menu_list_select menu_input dnf" name="" id="TzState">
+                                <option >--请选择--</option>
+                                <option >未跟进</option>
+                                <option >还要跟进</option>
+                                <option >考虑中</option>
+                                <option >答应参会</option>
+                                <option >已经参会</option>
+                                <option >已经订票</option>
+                                <option>考察/参会未签约</option>
+                                <option >考察/参会后续跟进</option>
+                                <option >签约未回款</option>
+                                <option >签约已回款</option>
+                                <option>终止联络</option>
+                            </select>
+                        </div>
+                        <div class="menu_list">
+                            <span class="mandatory">*</span>
+                            <p class="mandatory_p">沟通备忘</p>
+                            <textarea class="menu_input chu_beiwang"></textarea>
+                        </div>
+                        <div class="menu_cha">
+                            <button id="button" class="mune_button">提交</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--留言列表结束-->
+        </div>
+        <!--征文结束-->
+        <!--</div>-->
+    </div>
+<!--跟进详情结束-->
+<!--查看开始-->
+<div class="examine_box">
+    <div class="Contact_box Contact_padding">
+        <div class="Contact_exmout iconfont">&#xe607;</div>
+        <!--标题开始-->
+        <div class="Title">
+            <h1>项目全部留言详情</h1>
+        </div>
+        <!--标题结束-->
+        <!--留言列表开始-->
+        <div class="menu menu_TzShow">
+            <div class="menu_list_box chu_box" >
+                <div class="All_show_box">
+                    <h4 class="All_h">留言详情</h4>
+                    <div class="menu_list All_lists">
+                        <p class="examine_p">项目ID</p>
+                        <input  readonly="readonly" class="menu_input All_top" type="text" placeholder="项目id" value="">
+                    </div>
+                    <div class="menu_list All_lists">
+                        <p class="examine_p">项目名称</p>
+                        <input  readonly="readonly" class="menu_input All_top" type="text" placeholder="项目名称" value=" ">
+                    </div>
+                    <div class="menu_list All_lists">
+                        <p class="examine_p">客户姓名</p>
+                        <input  readonly="readonly" class="menu_input All_top" type="text" placeholder="客户姓名" value=" ">
+                    </div>
+                    <div class="menu_list All_lists">
+                        <p class="examine_p">客户电话</p>
+                        <input  readonly="readonly" id="passNum" class="menu_input All_top" type="text" placeholder="客户电话">
+                    </div>
+                    <div class="menu_list All_lists">
+                        <p class="examine_p">留言时间</p>
+                        <input  readonly="readonly" class="menu_input All_top" type="text" placeholder="留言时间" value="">
+                    </div>
+                    <div class="menu_list All_lists">
+                        <p class="examine_p">留言方式</p>
+                        <input  readonly="readonly" class="menu_input All_top" type="text" placeholder="留言方式" value=" ">
+                    </div>
+                    <div class="menu_list All_lists">
+                        <p class="examine_p">留言内容</p>
+                        <input  readonly="readonly" class="menu_input All_top" type="text" placeholder="留言内容" value=" ">
+                    </div>
+                </div>
+                <div class="All_show_box">
+                    <h4 class="All_h">分配记录</h4>
+                    <div class="All_tr menu_list">
+                        <div class="All_td">
+                            <span class="All_fen_one">账号:</span>
+                            <span class="All_fen_two"></span>
+                        </div>
+                        <div class="All_td">
+                            <span class="All_fen_one">姓名:</span>
+                            <span class="All_fen_two"></span>
+                        </div>
+                        <div class="All_td">
+                            <span class="All_fen_one">角色:</span>
+                            <span class="All_fen_two"></span>
+                        </div>
+                        <div class="All_td">
+                            <span class="All_fen_one">操作人:</span>
+                            <span class="All_fen_two"></span>
+                        </div>
+                        <div class="All_td">
+                            <span class="All_fen_one">分配时间:</span>
+                            <span class="All_fen_two"></span>
+                        </div>
+                    </div>
+                    <div class="All_tr menu_list">
+                        <div class="All_td">
+                            <span class="All_fen_one">账号:</span>
+                            <span class="All_fen_two"></span>
+                        </div>
+                        <div class="All_td">
+                            <span class="All_fen_one">姓名:</span>
+                            <span class="All_fen_two"></span>
+                        </div>
+                        <div class="All_td">
+                            <span class="All_fen_one">角色:</span>
+                            <span class="All_fen_two"></span>
+                        </div>
+                        <div class="All_td">
+                            <span class="All_fen_one">操作人:</span>
+                            <span class="All_fen_two"></span>
+                        </div>
+                        <div class="All_td">
+                            <span class="All_fen_one">分配时间:</span>
+                            <span class="All_fen_two"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="All_show_box">
+                    <h4 class="All_h">跟进记录</h4>
+                    <div class="menu_list">
+                        <p class="examine_p">来源</p>
+                        <input  readonly="readonly" class="menu_input " type="text" placeholder="来源">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">联系方式2</p>
+                        <input  readonly="readonly" class="menu_input " type="text" placeholder="联系方式2">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">联系方式2归属地</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="联系方式2归属地">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">性别</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="性别">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">电子邮件</p>
+                        <input  readonly="readonly" class="menu_input" type="email" placeholder="电子邮件">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">感兴趣的行业</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="感兴趣的行业">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">QQ</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="QQ账号">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">微信</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="微信">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">投资者等级</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="投资者等级">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p" >投资者金额</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="投资者金额">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">门店情况</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="门店情况">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">门店面积（㎡）</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="门店面积">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">上次跟进时间</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">回访时间</p>
+                        <input  readonly="readonly" class="menu_input" type="date">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">跟进状态</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="跟进状态">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">沟通备忘</p>
+                        <textarea  readonly="readonly" class="menu_input" style="max-height: 2rem"></textarea>
+                    </div>
+                </div>
+                <div class="All_show_box">
+                    <h4 class="All_h">招商结果</h4>
+                    <div class="menu_list">
+                        <p class="examine_p">客户姓名</p>
+                        <input  readonly="readonly" class="menu_input " type="text" placeholder="客户姓名">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">成交类型</p>
+                        <input  readonly="readonly" class="menu_input " type="text" placeholder="成交项目ID">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">成交项目</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="成交项目">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">跨组成交项目ID</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="跨组成交项目ID">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">跨组成交项目</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="跨组成交项目">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">感兴趣的行业</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="感兴趣的行业">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">投资区域</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="投资区域">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">投资方式</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="投资方式">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">投资者等级</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="投资者等级">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p" >是否签约</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="是否签约">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">签约时间</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="签约时间">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">考察类型</p>
+                        <input class="" type="radio" name="lei" value="招商会">
+                        <input class="" type="radio" name="lei" value="散客邀请">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">本次回款日期</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="本次回款日期">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">答应传送单据明细</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="答应传送单据明细">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">单据明细清单编号</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="单据明细清单编号">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">负责人</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="负责人">
+                    </div>
+                </div>
+                <div class="All_show_box">
+                    <h4 class="All_h">回款信息</h4>
+                    <div class="menu_list">
+                        <p class="examine_p">合同签约额</p>
+                        <input  readonly="readonly" class="menu_input " type="text" placeholder="合同签约额">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">合同定金</p>
+                        <input  readonly="readonly" class="menu_input " type="text" placeholder="合同定金">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">合同履行额（当月交款金额）</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="合同履行额">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">合同意向金</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="合同意向金">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">全款佣金（全额服务费）</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="全款佣金">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">代收佣金金额</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="代收佣金金额">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">本月应收服务费</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="本月应收服务费">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">已收佣金金额</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="已收佣金金额">
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p">是否代收款</p>
+                        <input class="" type="radio" name="shou" value="">是
+                        <input class="" type="radio" name="shou" value="">否
+                    </div>
+                    <div class="menu_list">
+                        <p class="examine_p" >代收款总额</p>
+                        <input  readonly="readonly" class="menu_input" type="text" placeholder="代收款总额">
+                    </div>
+                </div>
+                <div class="All_show_box">
+                    <h4 class="All_h">签约特殊条款</h4>
+                    <div class="menu_list">
+                        <textarea  readonly="readonly" name="" id="" cols="30" rows="10" class="Te"></textarea>
+                    </div>
+                </div>
+                <div class="examine_buttun">关闭</div>
+            </div>
+        </div>
+        <!--留言列表结束-->
+
+    </div>
+</div>
+<!--查看结束-->
+
+
+<div id="barcon2"class="barcon2 Static_buttom_max">
+    <div class="Static_paging">
+        <a class="page_list Static_active" href="javascript:;"  id="firstPage">首页</a>
+        <a class="page_list" href="javascript:;"  id="prePage">上一页</a>
+        <a class="page_list" href="javascript:;"  id="nextPage">下一页</a>
+        <a class="page_list" href="javascript:;"  id="lastPage">尾页</a>
+        <select name="" id="jumpWhere">
+        </select>
+        <a href="###" class="page_list" id="jumpPage" onclick="jumpPage()">跳转</a>
+    </div>
+</div>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/All.js"></script>
+<script src="../js/choose-two.js"></script>
+<script src="../js/monin.js"></script>
+<script src="../js/Mask.js"></script>
+</body>
+</html>
